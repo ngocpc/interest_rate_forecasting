@@ -1,0 +1,18 @@
+This dataset represents the evolution of US bonds interest rates with different maturities. The dataset contains timeseries for
+- bonds interest rates: GT2 Govt, GT5 Govt, GT10 Govt, Effective Federal Funds Rate;
+- indices: LUATTRUU, TYVIX;
+- precomputed features: Slope 10-2, Slope 5-2, Slope 10-5, Curvature 10-5-2;
+- the target variable: Rising rates.
+
+Dates: date of the data point in format DD/MM/YYYY
+GT2 Govt: bonds interest rate with maturity 2 years
+GT5 Govt: bonds interest rate with maturity 5 years
+GT10 Govt: bonds interest rate with maturity 10 years
+LUATTRUU Index: bond index (see https://www.bloomberg.com/quote/LUATTRUU:IND)
+TYVIX Index: Treasury Note Volatility Index (see http://www.cboe.com/products/vix-index-volatility/volatility-on-interest-rates/cboe-cbot-10-year-u-s-treasury-note-volatility-index-tyvix)
+Slope 10-2: difference between GT10 Govt and GT2 Govt
+Slope 5-2: difference between GT5 Govt and GT2 Govt
+Slope 10-5: difference between GT10 Govt and GT5 Govt
+Curvature 10-5-2: curvature of the yield curve (see https://www.investopedia.com/terms/y/yieldcurve.asp)
+Effective Federal Funds Rate: interbank interest rate for overnight loans
+Rising rates: binary flag that indicates whether the interest rates are rising 
